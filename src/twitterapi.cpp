@@ -43,10 +43,10 @@ void TwitterApi::verifyCredentials()
 {
     qDebug() << "TwitterApi::verifyCredentials";
 
-    if (!wagnis->hasFeature("contribution") && wagnis->getRemainingTime() == 0) {
-        emit verifyCredentialsError("You haven't completed the registration process!");
-        return;
-    }
+//     if (!wagnis->hasFeature("contribution") && wagnis->getRemainingTime() == 0) {
+//         emit verifyCredentialsError("You haven't completed the registration process!");
+//         return;
+//     }
 
     QUrl url = QUrl(API_ACCOUNT_VERIFY_CREDENTIALS);
     QNetworkRequest request(url);
